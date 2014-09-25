@@ -1,0 +1,26 @@
+[{
+	"blocktrade_flow_option":1,
+	"blocktrade_flow_code":"002222",
+	"blocktrade_flow_time":"201405130929",
+	"blocktrade_flow_count":2222
+},{
+	"blocktrade_flow_option":1,
+	"blocktrade_flow_code":"002222",
+	"blocktrade_flow_time":"201405120519",
+	"blocktrade_flow_count":200
+},{
+	"blocktrade_flow_option":2,
+	"blocktrade_flow_code":"002222",
+	"blocktrade_flow_time":"201404100312",
+	"blocktrade_flow_count":50
+},{
+	"blocktrade_flow_option":2,
+	"blocktrade_flow_code":"002222",
+	"blocktrade_flow_time":"201404280312",
+	"blocktrade_flow_count":50
+},{
+	"blocktrade_flow_option":1,
+	"blocktrade_flow_code":"002222",
+	"blocktrade_flow_time":"201401200310",
+	"blocktrade_flow_count":100
+}]
