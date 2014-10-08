@@ -187,7 +187,7 @@
 			//判断是是否能从html中拿到数据
 			var stock_VAR:String = root.loaderInfo.parameters.stock_URL;
 			var splitHTML:Array = new Array;
-			if(stock_VAR=="undefined"||stock_VAR==""||stock_VAR==null){splitHTML = ["0600990","/info/find/tag?cat_id=420","#content03_left01"];}//,"articleList2.php""http://hm.emoney.cn/kline/",,"buyAndSell.php""getData.php",,http://localhost:8080/vip/trade_flow/flash?stock_code=002222
+			if(stock_VAR=="undefined"||stock_VAR==""||stock_VAR==null){splitHTML = ["0600990","articleList2.php","#content03_left01"];}//,"/info/find/tag?cat_id=420""http://hm.emoney.cn/kline/",,"buyAndSell.php",,http://localhost:8080/vip/trade_flow/flash?stock_code=002222
 			else{splitHTML = stock_VAR.split(",");}
 			
 			//判断该不该使用自己获取的url
@@ -202,7 +202,10 @@
 			else{//如果传进来的第一个参数是股票代码，就使用上面自己获取的本页URL
 				stock_URL = "http://" + currentURL + "/kline/";
 				stock_code = splitHTML[0];
-				if(splitHTML[1].indexOf(".php")>=0){article_URL=splitHTML[1];}
+				if(splitHTML[1].indexOf(".php")>=0){
+					article_URL=splitHTML[1];
+					stock_URL = "getData.php";
+					}
 				else{
 					var urlPath:String = splitHTML[1].charAt(0)=="/" ? splitHTML[1] : ("/"+splitHTML[1]);
 					article_URL = "http://" + currentURL + urlPath;
