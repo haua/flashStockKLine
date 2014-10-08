@@ -10,7 +10,7 @@ flashStockKLine
 ===============
 下载zip包，解压到电脑中，使用flash cs5或以上版本打开stock_quotation.fla文件，按下键盘“ctrl+回车”，即可。
 
-
+ 
 ps.若要使用在线数据，可以修改stock_quotation.as文件的190行，为
 if(stock_VAR=="undefined"||stock_VAR==""||stock_VAR==null){splitHTML = ["0600990","/info/find/tag?cat_id=420","#content03_left01"];}
 再运行即可。
