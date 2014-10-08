@@ -12,9 +12,7 @@ flashStockKLine
 
  
 ps.若要使用在线数据，可以修改stock_quotation.as文件的190行，为
-
 if(stock_VAR=="undefined"||stock_VAR==""||stock_VAR==null){splitHTML = ["0600990","/info/find/tag?cat_id=420","#content03_left01"];}
-
 再运行即可。
 
 
