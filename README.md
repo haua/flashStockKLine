@@ -11,6 +11,7 @@ K线
 使用方式
 ===============
 方法1：下载zip包，解压到电脑中，使用flash cs5或以上版本打开stock_quotation.fla文件，按下键盘“ctrl+回车”，即可。（此方法使用的是网络数据，数据每个股市交易日均实时更新）
+
 方法2：修改stock_quotation.as第190行为
 if(stock_VAR=="undefined"||stock_VAR==""||stock_VAR==null){splitHTML = ["0600990","articleList2.php","#content03_left01"];}
 之后按下键盘“ctrl+回车”，即可。
